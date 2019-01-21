@@ -22,6 +22,7 @@ export interface GraphQLServiceContext {
   persistedQueries?: {
     cache: KeyValueCache;
   };
+  persistedQueriesOnly?: boolean;
 }
 
 export interface GraphQLRequest {

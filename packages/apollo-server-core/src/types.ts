@@ -71,6 +71,7 @@ export interface Config
   cacheControl?: CacheControlExtensionOptions | boolean;
   plugins?: PluginDefinition[];
   persistedQueries?: PersistedQueryOptions | false;
+  persistedQueriesOnly?: boolean;
   subscriptions?: Partial<SubscriptionServerOptions> | string | false;
   //https://github.com/jaydenseric/graphql-upload#type-uploadoptions
   uploads?: boolean | FileUploadOptions;

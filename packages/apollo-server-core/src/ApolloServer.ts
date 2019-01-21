@@ -189,6 +189,10 @@ export class ApolloServerBase {
       requestOptions.cache = new InMemoryLRUCache();
     }
 
+    requestOptions.persistedQueriesOnly = Boolean(
+      requestOptions.persistedQueriesOnly,
+    );
+
     if (requestOptions.persistedQueries !== false) {
       if (!requestOptions.persistedQueries) {
         requestOptions.persistedQueries = {
@@ -196,6 +200,11 @@ export class ApolloServerBase {
         };
       }
     } else {
+      if (requestOptions.persistedQueriesOnly) {
+        throw new Error(
+          '`persistedQueries` must be set when `persistedQueriesOnly` is set.',
+        );
+      }
       // the user does not want to use persisted queries, so we remove the field
       delete requestOptions.persistedQueries;
     }
@@ -385,6 +394,8 @@ export class ApolloServerBase {
               serviceID: this.engineServiceId,
             },
             persistedQueries: this.requestOptions.persistedQueries,
+            persistedQueriesOnly: this.requestOptions
+              .persistedQueriesOnly as boolean,
           }),
       ),
     );
@@ -516,6 +527,7 @@ export class ApolloServerBase {
       // (https://github.com/Microsoft/TypeScript/issues/21673).
       persistedQueries: this.requestOptions
         .persistedQueries as PersistedQueryOptions,
+      persistedQueriesOnly: this.requestOptions.persistedQueriesOnly,
       fieldResolver: this.requestOptions.fieldResolver as GraphQLFieldResolver<
         any,
         any
