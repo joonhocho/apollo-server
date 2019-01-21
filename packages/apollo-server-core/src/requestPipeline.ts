@@ -70,6 +70,7 @@ export interface GraphQLRequestPipelineConfig<TContext> {
   extensions?: Array<() => GraphQLExtension>;
   tracing?: boolean;
   persistedQueries?: PersistedQueryOptions;
+  persistedQueriesOnly?: boolean;
   cacheControl?: CacheControlExtensionOptions;
 
   formatError?: Function;
@@ -126,6 +127,10 @@ export async function processGraphQLRequest<TContext>(
         throw new PersistedQueryNotFoundError();
       }
     } else {
+      if (config.persistedQueriesOnly) {
+        throw new InvalidGraphQLRequestError('Only persisted queries are allowed');
+      }
+
       const computedQueryHash = computeQueryHash(query);
 
       if (queryHash !== computedQueryHash) {
@@ -144,6 +149,9 @@ export async function processGraphQLRequest<TContext>(
     // FIXME: We'll compute the APQ query hash to use as our cache key for
     // now, but this should be replaced with the new operation ID algorithm.
     queryHash = computeQueryHash(query);
+    if (config.persistedQueriesOnly) {
+      throw new InvalidGraphQLRequestError('Only persisted queries are allowed');
+    }
   } else {
     throw new InvalidGraphQLRequestError('Must provide query string.');
   }

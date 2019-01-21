@@ -161,6 +161,7 @@ export async function runHttpQuery(
 
     extensions: options.extensions,
     persistedQueries: options.persistedQueries,
+    persistedQueriesOnly: Boolean(options.persistedQueriesOnly),
     tracing: options.tracing,
 
     formatError: options.formatError,
