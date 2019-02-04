@@ -1,6 +1,6 @@
 {
   "name": "apollo-server-cache-memcached",
-  "version": "0.2.3",
+  "version": "0.2.3-persisted-only.1",
   "author": "opensource@apollographql.com",
   "license": "MIT",
   "repository": {
