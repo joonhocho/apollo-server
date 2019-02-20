@@ -1,7 +1,7 @@
 import connect from 'connect';
 import query from 'qs-middleware';
 import { ApolloServer } from '../ApolloServer';
-import { Config } from 'apollo-server-core';
+import { Config } from '@sponsub/apollo-server-core';
 
 import testSuite, {
   schema as Schema,

@@ -4,7 +4,7 @@ import testSuite, {
   schema as Schema,
   CreateAppOptions,
 } from 'apollo-server-integration-testsuite';
-import { GraphQLOptions, Config } from 'apollo-server-core';
+import { GraphQLOptions, Config } from '@sponsub/apollo-server-core';
 
 function createApp(options: CreateAppOptions = {}) {
   const app = express();

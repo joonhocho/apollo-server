@@ -7,7 +7,7 @@ import FormData from 'form-data';
 import fs from 'fs';
 import { createApolloFetch } from 'apollo-fetch';
 
-import { gql, AuthenticationError, Config } from 'apollo-server-core';
+import { gql, AuthenticationError, Config } from '@sponsub/apollo-server-core';
 import { ApolloServer, ServerRegistration } from '../ApolloServer';
 
 import {

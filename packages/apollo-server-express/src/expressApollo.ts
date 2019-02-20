@@ -4,7 +4,7 @@ import {
   HttpQueryError,
   runHttpQuery,
   convertNodeHttpToRequest,
-} from 'apollo-server-core';
+} from '@sponsub/apollo-server-core';
 
 export interface ExpressGraphQLOptionsFunction {
   (req?: express.Request, res?: express.Response):

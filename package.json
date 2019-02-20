@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "@apollographql/apollo-tools": "^0.3.3",
+    "@sponsub/apollo-server-core": "file:packages/apollo-server-core",
     "apollo-cache-control": "file:packages/apollo-cache-control",
     "apollo-datasource": "file:packages/apollo-datasource",
     "apollo-datasource-rest": "file:packages/apollo-datasource-rest",

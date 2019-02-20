@@ -14,13 +14,13 @@ import {
   ContextFunction,
   Context,
   Config,
-} from 'apollo-server-core';
+} from '@sponsub/apollo-server-core';
 import accepts from 'accepts';
 import typeis from 'type-is';
 
 import { graphqlExpress } from './expressApollo';
 
-export { GraphQLOptions, GraphQLExtension } from 'apollo-server-core';
+export { GraphQLOptions, GraphQLExtension } from '@sponsub/apollo-server-core';
 
 export interface ServerRegistration {
   // Note: You can also pass a connect.Server here. If we changed this field to
