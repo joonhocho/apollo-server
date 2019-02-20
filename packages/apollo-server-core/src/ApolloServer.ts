@@ -205,6 +205,7 @@ export class ApolloServerBase {
           '`persistedQueries` must be set when `persistedQueriesOnly` is set.',
         );
       }
+
       // the user does not want to use persisted queries, so we remove the field
       delete requestOptions.persistedQueries;
     }
