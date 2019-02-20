@@ -1,5 +1,5 @@
 {
-  "name": "apollo-server-koa",
+  "name": "@sponsub/apollo-server-koa",
   "version": "2.4.2",
   "description": "Production-ready Node.js GraphQL server for Koa",
   "main": "dist/index.js",

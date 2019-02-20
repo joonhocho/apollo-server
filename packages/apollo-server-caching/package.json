@@ -1,5 +1,5 @@
 {
-  "name": "apollo-server-caching",
+  "name": "@sponsub/apollo-server-caching",
   "version": "0.3.1",
   "author": "opensource@apollographql.com",
   "license": "MIT",
