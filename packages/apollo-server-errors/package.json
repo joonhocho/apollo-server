@@ -1,6 +1,6 @@
 {
   "name": "apollo-server-errors",
-  "version": "2.2.0-persisted-only.2",
+  "version": "2.2.0",
   "author": "opensource@apollographql.com",
   "license": "MIT",
   "repository": {
