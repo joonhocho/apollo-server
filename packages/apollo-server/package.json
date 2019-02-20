@@ -1,5 +1,5 @@
 {
-  "name": "@sponsub/apollo-server",
+  "name": "apollo-server",
   "version": "2.4.2",
   "description": "Production ready GraphQL Server",
   "author": "opensource@apollographql.com",

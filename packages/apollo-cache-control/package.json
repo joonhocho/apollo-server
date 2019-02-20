@@ -1,5 +1,5 @@
 {
-  "name": "@sponsub/apollo-cache-control",
+  "name": "apollo-cache-control",
   "version": "0.5.1",
   "description": "A GraphQL extension for cache control",
   "main": "./dist/index.js",

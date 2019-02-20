@@ -1,5 +1,5 @@
 {
-  "name": "@sponsub/apollo-server-integration-testsuite",
+  "name": "apollo-server-integration-testsuite",
   "private": true,
   "version": "2.4.2",
   "description": "Apollo Server Integrations testsuite",

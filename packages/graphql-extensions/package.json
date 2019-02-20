@@ -1,5 +1,5 @@
 {
-  "name": "@sponsub/graphql-extensions",
+  "name": "graphql-extensions",
   "version": "0.5.2",
   "description": "Add extensions to GraphQL servers",
   "main": "./dist/index.js",

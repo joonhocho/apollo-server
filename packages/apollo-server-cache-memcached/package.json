@@ -1,5 +1,5 @@
 {
-  "name": "@sponsub/apollo-server-cache-memcached",
+  "name": "apollo-server-cache-memcached",
   "version": "0.3.1",
   "author": "opensource@apollographql.com",
   "license": "MIT",

@@ -1,5 +1,5 @@
 {
-  "name": "@sponsub/apollo-server-core",
+  "name": "apollo-server-core",
   "version": "2.4.2",
   "description": "Core engine for Apollo GraphQL server",
   "main": "dist/index.js",

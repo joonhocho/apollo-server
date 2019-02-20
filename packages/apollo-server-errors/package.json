@@ -1,5 +1,5 @@
 {
-  "name": "@sponsub/apollo-server-errors",
+  "name": "apollo-server-errors",
   "version": "2.2.0",
   "author": "opensource@apollographql.com",
   "license": "MIT",

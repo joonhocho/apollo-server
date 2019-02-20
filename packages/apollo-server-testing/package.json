@@ -1,5 +1,5 @@
 {
-  "name": "@sponsub/apollo-server-testing",
+  "name": "apollo-server-testing",
   "version": "2.4.2",
   "description": "Test utils for apollo-server",
   "main": "dist/index.js",
